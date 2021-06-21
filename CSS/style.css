@@ -7,7 +7,7 @@ padding:0;}                            /*definições de reset de margin e paddi
 body{
 
     font-family:Arial, Helvetica, sans-serif;
-    background-image:url("./Assets/Image.jpg");
+    background-image:url("../Assets/Image.jpg");
 
     background-size: cover;
     background-attachment: fixed;
@@ -101,7 +101,7 @@ font-size:1.4vw;
     background-color:#1f7fb3;
     border: 1px solid #cdcdcd;
     border-radius:50px;
-    background-image:url("./Assets/Add1.png");
+    background-image:url("../Assets/Add1.png");
 
     padding: 5%;
 
@@ -186,7 +186,7 @@ li{
     background-color:#1f7fb3;
     border: 1px solid #cdcdcd;
     border-radius:50px;
-    background-image:url("./Assets/reset1.png");
+    background-image:url("../Assets/reset1.png");
 
     padding: 6%;
     margin-bottom:3%;
@@ -200,7 +200,7 @@ li{
 @media screen and (max-width: 900px){
     body{
 
-        background-image:url("./Assets/Image2.jpg");
+        background-image:url("../Assets/Image2.jpg");
     
     }
     .container{

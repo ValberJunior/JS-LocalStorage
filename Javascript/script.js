@@ -96,22 +96,22 @@ function deleteTask(element){
 
 function mouseOn(elemento){                                                //<<      Eventos do Botão de Adicionar tarefas 
     elemento.style.backgroundColor = "#CCE4FF";
-    elemento.style.backgroundImage = 'url("./Assets/Add2.png")'
+    elemento.style.backgroundImage = 'url("../Assets/Add2.png")'
     elemento.style.padding = "7%";
 }
 
 function mouseOut(elemento){
     elemento.style.backgroundColor = "#1f7fb3";
-    elemento.style.backgroundImage = 'url("./Assets/Add1.png")'
+    elemento.style.backgroundImage = 'url("../Assets/Add1.png")'
     elemento.style.padding = "5%";
 }
 
 function cursorOn(elemento){                                                //<<      Eventos do botão de apagar tarefas
-    elemento.style.backgroundImage = 'url("./Assets/reset2.png")';
+    elemento.style.backgroundImage = 'url("../Assets/reset2.png")';
 }
 
 function cursorOut(elemento){
-    elemento.style.backgroundImage = 'url("./Assets/reset1.png")';
+    elemento.style.backgroundImage = 'url("../Assets/reset1.png")';
 }
 
 function mouseIn(elemento){                                                    // << Eventos do botão apagar tudo
