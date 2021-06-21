@@ -1,0 +1,324 @@
+*{margin:0;
+padding:0;}                            /*definições de reset de margin e padding*/
+
+
+
+/*definições para o body*/
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background-image:url("./Image/Image.jpg");
+
+    background-size: cover;
+    background-attachment: fixed;
+
+    position:relative;
+}
+
+/*definições para a div da página principal da página*/   
+
+
+
+.container{
+    max-width: 50%;
+    overflow: hidden;
+    
+    position:absolute;
+     
+    left:10%;
+    transform:translateY(4%);
+
+
+    background-color:#1b6a95e8;
+
+    border: 3px solid #00000000;
+    border-radius:20px;
+
+    padding:3.5%;
+
+    box-sizing: border-box;
+}
+
+/*definições para a div do primeiro conteudo */ 
+
+#title{                                                  /*Titulo*/
+    text-align:center;
+    padding-bottom:7%;
+
+
+    color:#eefa0ed8;
+
+    font-size:4.5vw;
+    font-family: 'Acme', sans-serif;
+}
+
+#subtitle{
+    color:#cdcdcde1;
+    font-family: sans-serif;
+    font-size:1.4vw;
+    padding-bottom:3%;
+}
+
+#text{
+    color:#cdcdcde1;
+    font-family: sans-serif;
+    font-size:1.4vw;
+    padding-bottom:4%;
+}
+
+input::placeholder{                               /*cor do meu texto padrão do input e tamanho do texto*/
+color:#FFFFFF;
+font-size:1.4vw;
+}
+
+
+#inputTask {                                                 /*Input que irá receber o texto*/
+    width: 75%;
+    margin:auto;
+
+    padding:3%;
+
+    border: 2px solid #cdcdcdda;
+    border-radius: 5px;
+    
+    background-color:#1b6a95; 
+    font-size:1.4vw;
+    color:#ffffffdc;
+
+    margin-bottom:5%;
+
+
+}
+                                                        
+#addTask{                                        /*botão para adicionar tarefa*/
+    max-width: 10%;
+    height:10%;
+    background-size: cover;
+
+    float:right;
+
+    
+    background-color:#1f7fb3;
+    border: 1px solid #cdcdcd;
+    border-radius:50px;
+    background-image:url("./Image/Add1.png");
+
+    padding: 5%;
+
+    
+    cursor: pointer;
+
+   
+}
+
+                                         
+#tasksList{                                                          /*A div que irá receber a playlist*/
+    max-width: 90%;
+    overflow: hidden;
+    margin:auto;
+
+    margin-top:5%;
+    margin-bottom:5%;
+    
+
+    background-color:#00000000;
+
+}
+
+.clearAll{                                                       /*O botão que para apagar todos os dados*/
+float: right;
+padding: 3%;
+
+border: 2px solid #1f7fb3;
+border-radius: 8px;
+
+margin-left: 5%;
+
+color: #ffffff;
+
+font-size:1.2vw;
+font-weight: bolder;
+background-color:#1f7fb3;
+
+cursor: pointer;
+
+}
+
+li{
+    list-style-type: none;
+    list-style-position: inside;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    width: 80%;
+    margin:auto;
+    margin-bottom:2%;
+
+    padding-left:4%;
+    padding-right:4%;
+    padding-top:4%;
+
+    
+    font-size:1.4vw;
+
+    color:#FFFFFF;
+
+    background-color:#117eb9;
+
+    border-radius:20px;
+    
+}
+
+
+
+
+
+
+.deleteThis{                                        /*Botão que apaga tarefa*/
+
+    max-width: 10%;
+    height:10%;
+    background-size: cover;
+    
+    float:right;
+
+    
+    background-color:#1f7fb3;
+    border: 1px solid #cdcdcd;
+    border-radius:50px;
+    background-image:url("./Image/reset1.png");
+
+    padding: 6%;
+    margin-bottom:3%;
+
+    
+    cursor: pointer;
+
+}
+
+/*Abaixo começa o media queries -------------------------------------------------------------------------------------*/
+@media screen and (max-width: 900px){
+    body{
+
+        background-image:url("./Image/Image2.jpg");
+    
+    }
+    .container{
+        max-width: 50%;
+        
+        position:absolute;
+        left:25%;
+        transform:translateY(12%);
+    
+        padding:4%;
+    }
+    #title{
+        
+        padding-bottom:8%;
+
+    }
+
+    #subtitle{
+
+        font-size:1.6vw;
+    }
+    
+    #text{
+
+        font-size:1.6vw;
+        padding-bottom:5%;
+    }
+    
+}
+
+
+@media screen and (max-width: 800px){
+
+    .container{
+        max-width: 60%;
+        
+        position:absolute;
+        left:20%;
+        transform:translateY(15%);
+    
+        padding:5%;
+    }
+    #title{
+        
+        padding-bottom:9%;
+
+    }
+
+    #subtitle{
+
+        font-size:1.9vw;
+    }
+    
+    #text{
+
+        font-size:1.9vw;
+        padding-bottom:6%;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 600px){
+
+    .container{
+        max-width: 70%;
+        
+        position:absolute;
+        left:15%;
+        transform:translateY(15%);
+    
+        padding:7%;
+    }
+    #title{
+        
+        padding-bottom:9%;
+
+    }
+
+    #subtitle {
+
+        font-size:2.3vw;
+    }
+    #inputTask, input::placeholder{
+        font-size: 2.5vw;
+    }
+    
+    #text{
+
+        font-size:2.3vw;
+        padding-bottom:7%;
+    }
+
+    .clearAll, li {font-size:1.8vw;}
+    
+}
+
+
+
+@media screen and (max-width: 400px){
+
+    .container{
+        max-width: 80%;
+        
+        position:absolute;
+        left:10%;
+        transform:translateY(20%);
+    
+    }
+
+    #subtitle, #inputTask, input::placeholder, #text{
+
+        font-size:3.5vw;
+    }
+
+
+    .clearAll, li {font-size:3vw;}
+    
+}
+

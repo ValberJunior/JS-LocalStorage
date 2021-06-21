@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organize | My Tasks</title>
+    <link href="./Image/ico.png" rel="icon" type="image/png"> <!-- icone da minha página-->
+    <link href="./style.css" rel="stylesheet">               <!-- Aqui eu chamarei o arquivo css externo-->
+
+    <!-- links das fontes que usei no projeto-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- A div container ficará com a class que definirá o conteúdo da página--> 
+
+<div class="container">
+
+    <!--Sessão 1 da página-->
+
+    <section>
+    <header><h1 id="title" onmouseover="titleOn(this)" onmouseout="titleOut(this)">Organize suas tarefas,<br> Otimize o seu tempo!</h1></header> <!--Título principal-->
+
+    <h2 id="subtitle">Com a mudança de pequenos hábitos, é possível gerenciar melhor o tempo, 
+        a fim de encontrar um equilíbrio entre o corpo e a mente e, até mesmo, entre vida pessoal e profissional.</h2>
+
+     <h3 id="text">Comece a organizar suas tarefas!</h3>   
+
+    </section>
+    
+    <section>
+
+        <input type="text" placeholder="Digite aqui a sua tarefa!" id="inputTask">  <!--Input que receberá o valor digitado-->
+    
+        <button id="addTask" onclick="createTask()" onmouseover="mouseOn(this)" onmouseout="mouseOut(this)"></button> <!-- Botão Adicionar tarefa-->
+  
+    <div id="tasksList"></div> <!--Div que receberá o valor digitado-->
+    <button onclick="cleanAll()" class="clearAll" onmouseover="mouseIn(this)" onmouseout="mouseOt(this)">Apagar Tudo</button>
+
+    </section>
+
+</div>
+
+<script src="./script.js"></script>    <!--Aqui chamo o arquivo externo do JS-->
+
+</body>
+</html>
