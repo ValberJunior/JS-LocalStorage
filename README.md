@@ -19,7 +19,7 @@ Print do desafio:
 https://user-images.githubusercontent.com/84424883/122812593-3e825680-d2a8-11eb-9061-b4b77657ca70.mp4
 
 #NETLIFY
-👉👉👉 organizemytasks.netlify.app 👈👈👈
+👉👉👉 https://organizemytasks.netlify.app/ 👈👈👈
 
 Dividi a tarefa em 3 partes.
 
