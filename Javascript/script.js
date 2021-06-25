@@ -23,6 +23,9 @@ let valor = " ";
     tasks.push(task);                     // aqui eu usarei a função padrão .push para adicionar ao array TASKS o meu obj task
     localStorage.setItem("tasks",JSON.stringify(tasks))             //Aqui eu chamo a função para adicionar o array na memória.
     updateList();}
+
+    let buttonClearAll = document.getElementsByClassName("clearAll")[0];
+    buttonClearAll.style.display="inline-bock";  //Ativar o botão Apagar tudo.
    
 }
 
