@@ -74,7 +74,22 @@ function deleteTask(element){
     };
     localStorage.setItem("tasks",JSON.stringify(tasks));
     updateList();
+    clearAllButton();
+ 
 }
+
+
+//Botão Apagar Tudo
+
+function clearAllButton(){
+    if (tasks==""){
+        let buttonClearAll = document.getElementsByClassName("clearAll")[0];
+    buttonClearAll.style.display="none";  //Desativar o botão Apagar tudo. 
+    }
+}
+
+
+
 
 
 // Para apagar tudo
@@ -86,11 +101,11 @@ function deleteTask(element){
 
         if(confirmation){
             tasks = [ ];
-            alert("Tarefas apagadas!")                         //<< **** OBS3
-        }
-     
-        let buttonClearAll = document.getElementsByClassName("clearAll")[0];
-        buttonClearAll.style.display="none";  //Desativar o botão Apagar tudo.    
+            alert("Tarefas apagadas!") 
+            let buttonClearAll = document.getElementsByClassName("clearAll")[0];
+        buttonClearAll.style.display="none";  //Desativar o botão Apagar tudo.                          //<< **** OBS3
+        }     
+          
 
     localStorage.setItem("tasks",JSON.stringify(tasks))             //Aqui eu chamo a função para adicionar o array na memória.
     updateList();
@@ -149,6 +164,7 @@ function titleOut(elemento){
     elemento.style.fontSize = "4.0vw";
     elemento.style.color = "#eefa0ed8";
 }
+
 
 
 //Função para armazenar os dados
