@@ -25,7 +25,7 @@ let valor = " ";
     updateList();}
 
     let buttonClearAll = document.getElementsByClassName("clearAll")[0];
-    buttonClearAll.style.display="inline-bock";  //Ativar o botão Apagar tudo.
+    buttonClearAll.style.display="inline-block";  //Ativar o botão Apagar tudo.
    
 }
 
