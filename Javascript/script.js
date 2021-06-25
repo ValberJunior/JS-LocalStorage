@@ -89,6 +89,9 @@ function deleteTask(element){
             alert("Tarefas apagadas!")                         //<< **** OBS3
         }
      
+        let buttonClearAll = document.getElementsByClassName("clearAll")[0];
+        buttonClearAll.style.display="none";  //Desativar o botão Apagar tudo.    
+
     localStorage.setItem("tasks",JSON.stringify(tasks))             //Aqui eu chamo a função para adicionar o array na memória.
     updateList();
 }
