@@ -23,9 +23,6 @@ let valor = " ";
     tasks.push(task);                     // aqui eu usarei a função padrão .push para adicionar ao array TASKS o meu obj task
     localStorage.setItem("tasks",JSON.stringify(tasks))             //Aqui eu chamo a função para adicionar o array na memória.
     updateList();}
-
-    let buttonClearAll = document.getElementsByClassName("clearAll")[0];
-    buttonClearAll.style.display="inline-block";  //Ativar o botão Apagar tudo.
    
 }
 
@@ -57,6 +54,8 @@ function updateList( ){
 
     document.getElementById("inputTask").value = " ";
 
+    clearAllButton()  //Ativar o botão Apagar tudo.
+
 }
 
 
@@ -82,9 +81,12 @@ function deleteTask(element){
 //Botão Apagar Tudo
 
 function clearAllButton(){
-    if (tasks==""){
-        let buttonClearAll = document.getElementsByClassName("clearAll")[0];
+    let buttonClearAll = document.getElementsByClassName("clearAll")[0];
+    if (tasks==""){ 
     buttonClearAll.style.display="none";  //Desativar o botão Apagar tudo. 
+    }
+    else if(tasks!=""){
+        buttonClearAll.style.display="inline-block"; 
     }
 }
 
