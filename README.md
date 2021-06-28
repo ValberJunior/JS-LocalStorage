@@ -12,11 +12,12 @@ O desafio consiste em:
 
 Print do desafio:
 
-![image](https://user-images.githubusercontent.com/84424883/122692309-99657080-d20a-11eb-8a0c-eafc4165371c.png)
+![print organize my tasks](https://user-images.githubusercontent.com/84424883/123706337-896b1380-d83e-11eb-93a7-7a2b014bba4a.png)
 
-🎞 Captura de vídeo:
 
-https://user-images.githubusercontent.com/84424883/122812593-3e825680-d2a8-11eb-9061-b4b77657ca70.mp4
+https://user-images.githubusercontent.com/84424883/123706423-a6074b80-d83e-11eb-97ce-307006920a06.mp4
+
+
 
 #NETLIFY
 👉👉👉 https://organizemytasks.netlify.app/ 👈👈👈
